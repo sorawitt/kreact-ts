@@ -3,6 +3,14 @@ import viteLogo from '/vite.svg'
 import './app.css'
 import openExternalWebFromUrl from './bridge'
 
+/**
+ * Root UI component for the app.
+ *
+ * Renders Vite and Preact logo links, a heading, a card containing a button that opens
+ * an external Krungsri card URL, and links to the Preact + Vite starter guide.
+ *
+ * @returns The component's JSX element.
+ */
 export function App() {
   return (
     <>

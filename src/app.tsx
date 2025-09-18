@@ -2,6 +2,7 @@ import preactLogo from './assets/preact.svg'
 import viteLogo from '/vite.svg'
 import './app.css'
 import openExternalWebFromUrl from './bridge'
+import navigateToFeature from './navigateFeature'
 
 export function App() {
   return (
@@ -17,7 +18,11 @@ export function App() {
       <h1>Vite + Preact</h1>
       <div class="card">
         <button onClick={() => openExternalWebFromUrl('https://www.krungsri.com/th/personal/card/krungsri-boarding-card')}>
-          กดฉันสิ กดฉันสิ
+          อ่านข่าวหน่ยอจ้า
+        </button>
+
+        <button onClick={() => navigateToFeature('https://uchoose-uat.onelink.me/EOyG/kzbxr1aa')}>
+          deeplink to feature
         </button>
         <p>
           Edit <code>src/app.tsx</code> and save to test HMR
